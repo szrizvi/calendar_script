@@ -103,7 +103,7 @@ if st.button("Generate PDF"):
             st.success("PDF generated successfully!")
             st.download_button(
                 label="Download PDF",
-                data=pdf_bytes,
+                data=bytes(pdf_bytes, "latin1"),
                 file_name="majalis_schedule.pdf",
                 mime="application/pdf"
             )
