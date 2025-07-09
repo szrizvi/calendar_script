@@ -1,4 +1,4 @@
-fpdf2==1.7.8
+fpdf2==2.8.3
 icalendar==5.0.11
 requests==2.31.0
 python-dateutil==2.8.2
