@@ -99,7 +99,7 @@ if st.button("Generate PDF"):
                     pdf.cell(0, 6, f"Location: {location}", ln=1)
                 pdf.ln(3)
 
-            pdf_bytes = pdf.output(dest='S').encode('latin1')
+            pdf_bytes = pdf.output(dest='S')
             st.success("PDF generated successfully!")
             st.download_button(
                 label="Download PDF",
