@@ -94,9 +94,6 @@ if st.button("Generate PDF"):
                 pdf.cell(0, 6, f"Host: {event.get('summary')}", ln=1)
                 pdf.cell(0, 6, f"Date: {start_time.strftime('%A %B %d %Y')}", ln=1)
                 pdf.cell(0, 6, f"Time: {start_time.strftime('%I:%M %p')}", ln=1)
-                location = event.get('location')
-                if location: # optional param
-                    pdf.cell(0, 6, f"Location: {location}", ln=1)
                 pdf.ln(3)
 
             pdf_bytes = pdf.output(dest='S')
